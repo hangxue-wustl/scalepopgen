@@ -37,6 +37,7 @@ process PLINK2_INDEP_PAIRWISE{
         --memory $mem_mb \\
          ${args} \\
         --bfile ${prefix} \\
+        --bad-ld \\
         --indep-pairwise ${args2} \\
 
        plink2 \\
