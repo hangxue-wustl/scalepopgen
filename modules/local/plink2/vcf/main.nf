@@ -24,6 +24,7 @@ process PLINK2_VCF {
     plink2 \\
         --threads $task.cpus \\
         --memory $mem_mb \\
+        --vcf-half-call missing \\
         $args \\
         --vcf $vcf \\
         --out ${prefix}
